@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图书馆t</title>
+
+<link rel="stylesheet" href="/www/index.css"/>
+</head>
+<body>
+    <div class="title">图书馆管理系统 <a href="/toAdd">添加图书</a></div>
+    <div class="content">
+        <table cellpadding='0' cellspacing='0'>
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>名</th>
+                    <th>作者</th>
+                    <th>分类</th>
+                    <th>描述</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{each arr}}
+                <tr>
+                    <td>{{$value.ID}}</td>
+                    <td>{{$value.name}}</td>
+                    <td>{{$value.autor}}</td>
+                    <td>{{$value.category}}</td>
+                    <td>{{$value.descript}}</td>
+                    <td><a href="/toEditPage?id={{$value.ID}}">修改</a>|<a href="/delet?ID={{$value.ID}}">删除</a></td>
+                </tr>
+                {{/each}}
+                <!--<tr>
+                    <td>1</td>
+                    <td>西游记</td>
+                    <td>无车</td>
+                    <td>文学</td>
+                    <td>孙猴子</td>
+                    <td><a href="">修改</a>|<a href="#">删除</a></td>
+               
+                <tr>
+                    <td>1</td>
+                    <td>西游记</td>
+                    <td>无车</td>
+                    <td>文学</td>
+                    <td>孙猴子</td>
+                    <td><a href="#">修改</a>|<a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>西游记</td>
+                    <td>无车</td>
+                    <td>文学</td>
+                    <td>孙猴子</td>
+                    <td><a href="#">修改</a>|<a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>西游记</td>
+                    <td>无车</td>
+                    <td>文学</td>
+                    <td>孙猴子</td>
+                    <td><a href="#">修改</a>|<a href="#">删除</a></td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

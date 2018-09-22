@@ -1,0 +1,23 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indes.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "art-template": "^4.13.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-art-template": "^1.0.1",
+    "router": "^1.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
